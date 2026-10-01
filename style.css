@@ -301,9 +301,9 @@ input:focus {
 }
 
 .mode-button.active {
-    background: #1e194d;
+    background: var(--color-dark-blue);
     color: #ffffff;
-    border-color: #1e194d;
+    border-color: var(--color-dark-blue);
 }
 
 .mode-fields {
