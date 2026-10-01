@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background: #f5f6f8;
+    color: #353c41;
+}
+
+.calculator {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #d9dee3;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(10, 13, 18, 0.08);
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #1e194d;
+}
+
+.subtitle {
+    margin: 8px 0 25px;
+    color: #686f75;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aeb9bf;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #568b3e;
+    box-shadow: 0 0 0 2px rgba(86, 139, 62, 0.15);
+}
+
+.overall-quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 22px 0;
+    padding: 15px;
+    background: #f5f6f8;
+    border-radius: 8px;
+}
+
+.overall-quantity strong {
+    font-size: 20px;
+}
+
+.mode-section {
+    margin-top: 20px;
+}
+
+.mode-buttons {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.mode-button {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #aeb9bf;
+    background: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.mode-button.active {
+    background: #1e194d;
+    color: #ffffff;
+    border-color: #1e194d;
+}
+
+.mode-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+.results {
+    margin-top: 28px;
+    padding: 20px;
+    border: 1px solid #d9dee3;
+    border-radius: 8px;
+}
+
+.results h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e8eb;
+}
+
+.result-row strong {
+    font-weight: 700;
+}
+
+.loss strong {
+    color: #b42318;
+}
+
+.profit strong {
+    color: #2e7d32;
+}
+
+.risk-reward {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    padding: 14px;
+    background: #f5f6f8;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.summary {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f5f6f8;
+    border-radius: 6px;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+
+    .calculator {
+        padding: 20px;
+    }
+
+    .form-grid,
+    .mode-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
