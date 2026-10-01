@@ -1,3 +1,200 @@
+
+/* -----------------------------------------------------
+   FONT SYSTEM
+----------------------------------------------------- */
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* -----------------------------------------------------
+   COLOR SYSTEM
+----------------------------------------------------- */
+:root {
+    /* Brand Palette */
+    /* Primary */
+    --color-white: #FFFFFF;
+    --color-orange: #FA550A;
+    --color-dark-blue: #000064;
+
+    /* Brand Palette */
+    --color-neutral-grey: #53585A;
+    --color-black: #2C2C2C;
+    --color-dark-brown: #3C2319;
+    --color-orange-accessible: #EF6C01;
+    --color-yellow: #FECF05;
+    --color-light-blue: #B8DDE1;
+
+    /* Brand Orange Shades */
+    --orange-25: #FFF2E7;
+    --orange-50: #FFE5D0;
+    --orange-100: #FEDBC2;
+    --orange-200: #FEC8A0;
+    --orange-300: #FEB589;
+    --orange-400: #FEA26C;
+    --orange-500: #FE7200;
+    --orange-600: #EF6C01;
+    --orange-700: #CB5800;
+    --orange-800: #974815;
+    --orange-900: #5A3414;
+    --orange-950: #3A1A00;
+
+    /* Neutral Grey Color */
+    --neutral-grey: #53585A;
+    --neutral-grey-01: #585858;
+    --neutral-grey-02: #a5a5a5;
+    --neutral-grey-03: #bbbbbb;
+    --neutral-grey-04: #d1d1d1;
+    --neutral-grey-05: #e8e8e8;
+
+    /* Gray Color */
+    --gray-25: #fdfdfd;
+    --gray-50: #fafafa;
+    --gray-100: #f5f5f5;
+    --gray-200: #e9eaeb;
+    --gray-300: #d5d7da;
+    --gray-400: #a4a7ae;
+    --gray-500: #717680;
+    --gray-600: #535862;
+    --gray-700: #414651;
+    --gray-800: #252b37;
+    --gray-900: #181d27;
+    --gray-950: #0a0d12;
+
+    /* Tan Color */
+    --tan-50: #f9f7f4;
+    --tan-100: #f3efe9;
+    --tan-200: #eae4de;
+    --tan-300: #DCD3C9;
+    --tan-400: #CEC6BC;
+    --tan-500: #887F77;
+    --tan-600: #68635E;
+
+    /* Base Color */
+    --base-white: #FFFFFF;
+    --base-black: #000000;
+
+    /* Feedback (optional) */
+    --success: #27AE60;
+    --warning: #F2C94C;
+    --error: #EB5757;
+
+    /* Tints */
+    --tint-1:#FEEAE2;
+    --tint-2:#FFF3EE;
+    --tint-3:#FFFCFA;
+    --tint-4:#FFFAF8;
+    --tint-5:linear-gradient(180deg, #FFFAF8 0%, #FFFFFF 100%);
+}
+
+/* -----------------------------------------------------
+   GENERAL CSS
+----------------------------------------------------- */
+
 * {
     box-sizing: border-box;
 }
@@ -8,6 +205,7 @@ body {
     font-family: Arial, sans-serif;
     background: #f5f6f8;
     color: #353c41;
+    font: poppins-regular;
 }
 
 .calculator {
@@ -23,7 +221,8 @@ body {
 h1 {
     margin: 0;
     font-size: 28px;
-    color: #1e194d;
+    color: var(--color-orange);
+    font: poppins-bold;
 }
 
 .subtitle {
@@ -49,7 +248,7 @@ h1 {
 
 label {
     font-size: 14px;
-    font-weight: 600;
+    font: poppins-semibold;
 }
 
 input {
