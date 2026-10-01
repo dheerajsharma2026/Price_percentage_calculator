@@ -203,9 +203,9 @@ body {
     margin: 0;
     padding: 30px 15px;
     font-family: Arial, sans-serif;
-    background: #f5f6f8;
+    background: var(--gray-700);
     color: #353c41;
-    font: poppins-regular;
+    font-family: poppins-regular;
 }
 
 .calculator {
@@ -221,8 +221,8 @@ body {
 h1 {
     margin: 0;
     font-size: 28px;
-    color: var(--color-orange);
-    font: poppins-bold;
+    color: var(--color-dark-blue);
+    font-family: poppins-bold;
 }
 
 .subtitle {
@@ -248,7 +248,7 @@ h1 {
 
 label {
     font-size: 14px;
-    font: poppins-semibold;
+    font-family: poppins-semibold;
 }
 
 input {
