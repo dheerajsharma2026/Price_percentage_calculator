@@ -420,6 +420,23 @@
         height: fit-content;
         color: var(--base-white);
     }
+a {
+    padding: 20px;
+    border: 1px solid #d9dee3;
+    border-radius: 8px;
+    background: var(--gray-900);
+    text-align: center;
+    height: fit-content;
+    width: 400px;
+    color: #ffffff;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+a:hover {
+    background: #ffffff;
+    color: var(--color-black);
+    font-weight: 700;
+}
   
   @media (max-width: 768px) {
     .container{
